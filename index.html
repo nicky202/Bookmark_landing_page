@@ -28,15 +28,28 @@
   </head>
   <body>
     <nav>
-      <div>
+      <div class="mobile-active"></div>
+      <div class="logo">
         <img src="./images/logo-bookmark.svg" alt="Logo Bookmark" />
       </div>
-      <ul>
+      <ul class="listMenu">
         <li>Features</li>
         <li>Pricing</li>
         <li>Contact</li>
         <li><a href="">Login</a></li>
       </ul>
+      <div class="socialMediaNav">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+        <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+      </div>
+      <div>
+        <button class="button-hamburger" id="menu">
+          <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+        </button>
+        <button class="button-close" id="close">
+          <img src="./images/icon-close.svg" alt="icon-close" />
+        </button>
+      </div>
     </nav>
     <header>
       <div class="box1">
@@ -68,9 +81,13 @@
           </p>
         </div>
         <div class="btnTab">
-          <button id="btnTab1">Simple Bookmarking</button>
-          <button id="btnTab2">Speedy Searching</button>
-          <button id="btnTab3">Easy Sharing</button>
+          <hr />
+          <button id="btnTab1" class="btn active">Simple Bookmarking</button>
+          <hr />
+          <button id="btnTab2" class="btn">Speedy Searching</button>
+          <hr />
+          <button id="btnTab3" class="btn">Easy Sharing</button>
+          <hr />
           <div class="border"></div>
         </div>
         <div class="slideTab">
@@ -98,6 +115,7 @@
             <div class="tab">
               <div class="illustration">
                 <div></div>
+
                 <div>
                   <img
                     src="./images/illustration-features-tab-2.svg"
